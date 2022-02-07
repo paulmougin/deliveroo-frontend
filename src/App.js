@@ -21,7 +21,7 @@ function App() {
   return isLoading ? (
     <div>En cours de chargement...</div>
   ) : (
-    <div>
+    <>
       <header>
         {/* NAVIGATION */}
         <div className="navigation">
@@ -42,7 +42,26 @@ function App() {
           </div>
         </div>
       </header>
-    </div>
+
+      {/* SECTION */}
+      {data.categories.map((mealType, index) => {
+        return (
+          <section>
+            <h1>{mealType.name}</h1>
+            {/* {mealType.categories.map((mealType, index) => { */}
+            {mealType.meals.map((meals, index) => {
+              return (
+                <div>
+                  <h3 className="dish-title">{meals.title}</h3>
+                  <span className="dish-descritpion">{meals.description}</span>
+                  <span className="dish-price">{meals.price}</span>
+                </div>
+              );
+            })}
+          </section>
+        );
+      })}
+    </>
   );
 }
 
