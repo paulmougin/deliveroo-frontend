@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e9ebeb;
+  box-sizing: border-box;
+}
+
+.logo {
+  background-color: aquamarine;
+  width: 160px;
+  height: 40px;
+}
+
+.cover-description {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.description {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  color: #868a8a;
+  padding-right: 3rem;
+}
+
+.cover-image {
+  width: 350px;
+}
+
+.cover-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
