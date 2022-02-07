@@ -16,7 +16,7 @@ function App() {
     };
 
     fetchData();
-  });
+  }, []);
 
   return isLoading ? (
     <div>En cours de chargement...</div>
